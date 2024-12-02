@@ -1,0 +1,16 @@
+﻿<Window x:Class="Kursovoi.ManageUsers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kursovoi"
+        mc:Ignorable="d"
+        Title="Manage Users" Height="350" Width="800">
+    <Grid>
+        <DataGrid x:Name="UsersDataGrid" AutoGenerateColumns="True" Margin="10">
+
+        </DataGrid>
+        <Button Content="Save Changes" Click="SaveChanges_Click" Margin="10,250,10,10" HorizontalAlignment="Right" Width="120"/>
+        <Button Content="Delete" Click="DeleteUsers_click" Margin="0,250,130,10" HorizontalAlignment="Right" Width="125"/>
+    </Grid>
+</Window>
